@@ -4,15 +4,13 @@ import { useState } from "react";
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState([]);
-  const [score, setScore] = useState(0);
-  const [showScore, setShowScore] = useState(false);
+  const [selecting, setSelecting] = useState(false);
 
   const handleAnswerOption = (answer) => {
     setSelectedOptions([
       (selectedOptions[currentQuestion] = { answerByUser: answer }),
     ]);
     setSelectedOptions([...selectedOptions]);
-    console.log(selectedOptions);
   };
 
   const handlePrevious = () => {
@@ -26,26 +24,26 @@ export default function Quiz() {
   };
 
   const handleSubmitButton = () => {
-    let newScore = 0;
     for (let i = 0; i < questions.length; i++) {
       questions[i].answerOptions.map(
         (answer) =>
           answer.isCorrect &&
-          answer.answer === selectedOptions[i]?.answerByUser &&
-          (newScore += 1)
+          answer.answer === selectedOptions[i]?.answerByUser 
       );
     }
-    setScore(newScore);
-    setShowScore(true);
+    setSelecting(true);
   };
 
   return (
     <div className="flex flex-col w-screen px-5 h-screen bg-[#1A1A1A] justify-center items-center">
         <title>Quiz App</title>
-      {showScore ? (
-        <h1 className="text-3xl font-semibold text-center text-white">
-          You scored {score} out of {questions.length}
-        </h1>
+      {selecting ? (
+                <div>
+                    {selectedOptions[0].answerByUser == "Art" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Graphic esigner!</h1> : null}
+                    {selectedOptions[0].answerByUser == "Reading" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Data Entry !</h1> : null}
+                    {selectedOptions[0].answerByUser == "Writing" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a UX Researcher!</h1> : null}
+                    {selectedOptions[0].answerByUser == "Math" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Web Developer!</h1> : null}
+                </div>
       ) : (
         <>
           <div className="flex flex-col items-start w-full">
@@ -79,8 +77,7 @@ export default function Quiz() {
             ))}
           </div>
           <div className="flex justify-between w-full mt-4 text-white">
- 
-{currentQuestion === 0? null :         <button
+            {currentQuestion === 0? null : <button
               onClick={handlePrevious}
               className="w-[49%] py-3 bg-indigo-600 rounded-lg"
             >Previous</button> }
