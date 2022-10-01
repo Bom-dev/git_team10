@@ -79,12 +79,12 @@ export default function Quiz() {
             ))}
           </div>
           <div className="flex justify-between w-full mt-4 text-white">
-            <button
+ 
+{currentQuestion === 0? null :         <button
               onClick={handlePrevious}
               className="w-[49%] py-3 bg-indigo-600 rounded-lg"
-            >
-              Previous
-            </button>
+            >Previous</button> }
+
             <button
               onClick={
                 currentQuestion + 1 === questions.length
