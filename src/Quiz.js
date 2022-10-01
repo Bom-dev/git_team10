@@ -39,7 +39,7 @@ export default function Quiz() {
         <title>Quiz App</title>
       {selecting ? (
                 <div>
-                    {selectedOptions[0].answerByUser === "Art" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Graphic esigner!</h1> : null}
+                    {selectedOptions[0].answerByUser === "Art" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Graphic Designer!</h1> : null}
                     {selectedOptions[0].answerByUser === "Reading" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Data Entry !</h1> : null}
                     {selectedOptions[0].answerByUser === "Writing" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a UX Researcher!</h1> : null}
                     {selectedOptions[0].answerByUser === "Math" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Web Developer!</h1> : null}
