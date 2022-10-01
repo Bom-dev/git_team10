@@ -1,0 +1,28 @@
+[
+    {
+      "question": "Which item interests you the most?",
+      "answerOptions": [
+        { "answer": "Art" },
+        { "answer": "Reading" },
+        { "answer": "Writing", "isCorrect": true },
+        { "answer": "Math" }
+      ]
+    },
+    {
+      "question": "What's your proficiency level with computers?",
+      "answerOptions": [
+        { "answer": "Beginner: Only used a computer a handful of time" },
+        { "answer": "Intermediate: Regularly use computer for basic things like email" },
+        { "answer": "Advanced: Use tools like excel, social media, etc.", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "What industries are you interested in?",
+      "answerOptions": [
+        { "answer": "Tech" },
+        { "answer": "Non-Profits", "isCorrect": true },
+        { "answer": "Education" },
+        { "answer": "Art/Design"}
+      ]
+    }
+  ]
