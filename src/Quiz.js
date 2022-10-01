@@ -43,6 +43,10 @@ export default function Quiz() {
                     {selectedOptions[0].answerByUser === "Reading" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Data Entry !</h1> : null}
                     {selectedOptions[0].answerByUser === "Writing" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a UX Researcher!</h1> : null}
                     {selectedOptions[0].answerByUser === "Math" ? <h1 className="text-3xl font-semibold text-center text-white">Let's try to be a Web Developer!</h1> : null}
+                    <div className="flex justify-between w-full mt-4 text-white">
+                        <button onClick={(e) => window.location.reload(false) }
+                        className="w-[49%] py-3 bg-indigo-600 rounded-lg">Go Back</button>
+                    </div>
                 </div>
       ) : (
         <>
