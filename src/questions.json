@@ -4,7 +4,7 @@
       "answerOptions": [
         { "answer": "Art" },
         { "answer": "Reading" },
-        { "answer": "Writing", "isCorrect": true },
+        { "answer": "Writing"},
         { "answer": "Math" }
       ]
     },
@@ -13,16 +13,19 @@
       "answerOptions": [
         { "answer": "Beginner: Only used a computer a handful of time" },
         { "answer": "Intermediate: Regularly use computer for basic things like email" },
-        { "answer": "Advanced: Use tools like excel, social media, etc.", "isCorrect": true }
+        { "answer": "Advanced: Use tools like excel, social media, etc."}
       ]
     },
     {
       "question": "What industries are you interested in?",
       "answerOptions": [
-        { "answer": "Tech" },
-        { "answer": "Non-Profits", "isCorrect": true },
-        { "answer": "Education" },
-        { "answer": "Art/Design"}
+        { "answer": "Technology"},
+        { "answer": "Finance and Insurance"},
+        { "answer": "Agriculture, Forestry, Fishing and Hunting"},
+        { "answer": "Accommodation and Food Services"},
+        { "answer": "Arts, Entertainment and Recreation"},
+        { "answer": "Healthcare and Social Assistance"},
+        { "answer": "Business and Management"}
       ]
     }
   ]
