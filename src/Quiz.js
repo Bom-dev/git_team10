@@ -45,7 +45,7 @@ export default function Quiz() {
                     <h1 className="text-3xl font-semibold text-center text-slate-500">Thanks for the submitting!</h1>
                     <div className="flex justify-between w-full mt-4 text-white">
                         <button onClick={(e) => window.location.reload(false)}
-                            className="w-[49%] py-3 bg-blue-600 rounded-lg">Go Back</button>
+                            className="w-[99%] py-3 bg-blue-600 rounded-lg">Go Back</button>
                     </div>
                 </div>
             ) : (
