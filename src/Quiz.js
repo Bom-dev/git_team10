@@ -27,7 +27,6 @@ export default function Quiz() {
         for (let i = 0; i < questions.length; i++) {
             questions[i].answerOptions.map(
                 (answer) =>
-                    answer.isCorrect &&
                     answer.answer === selectedOptions[i]?.answerByUser
             );
         }
@@ -39,10 +38,11 @@ export default function Quiz() {
             <title>Quiz App</title>
             {selecting ? (
                 <div>
-                    {selectedOptions[0].answerByUser === "Art" ? <h1 className="text-3xl font-semibold text-center text-slate-500">Let's try to be a Graphic Designer!</h1> : null}
+                    {/* {selectedOptions[0].answerByUser === "Art" ? <h1 className="text-3xl font-semibold text-center text-slate-500">Let's try to be a Graphic Designer!</h1> : null}
                     {selectedOptions[0].answerByUser === "Reading" ? <h1 className="text-3xl font-semibold text-center text-slate-500">Let's try to be a Data Entry !</h1> : null}
                     {selectedOptions[0].answerByUser === "Writing" ? <h1 className="text-3xl font-semibold text-center text-slate-500">Let's try to be a UX Researcher!</h1> : null}
-                    {selectedOptions[0].answerByUser === "Math" ? <h1 className="text-3xl font-semibold text-center text-slate-500">Let's try to be a Web Developer!</h1> : null}
+                    {selectedOptions[0].answerByUser === "Math" ? <h1 className="text-3xl font-semibold text-center text-slate-500">Let's try to be a Web Developer!</h1> : null} */}
+                    <h1 className="text-3xl font-semibold text-center text-slate-500">Thanks for the submitting!</h1>
                     <div className="flex justify-between w-full mt-4 text-white">
                         <button onClick={(e) => window.location.reload(false)}
                             className="w-[49%] py-3 bg-blue-600 rounded-lg">Go Back</button>
@@ -65,7 +65,7 @@ export default function Quiz() {
                                 className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer border-black/10 rounded-xl bg-black/5"
                                 onClick={(e) => handleAnswerOption(answer.answer)}
                             >
-                                {currentQuestion === 2 ? <input
+                                {currentQuestion === 2 || currentQuestion === 3 ? <input
                                     type="checkbox"
                                     name={answer.answer}
                                     value={answer.answer}

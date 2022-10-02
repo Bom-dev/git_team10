@@ -1,19 +1,33 @@
 [
+  {
+    "question": "What's your age range?",
+    "answerOptions": [
+      { "answer": "18-24"},
+      { "answer": "25-34"},
+      { "answer": "35-44"},
+      { "answer": "45-54"},
+      { "answer": "55-64"},
+      { "answer": "65+"}
+    ]
+  },
     {
-      "question": "Which item interests you the most?",
+      "question": "What's your preferred language?",
       "answerOptions": [
-        { "answer": "Art" },
-        { "answer": "Reading" },
-        { "answer": "Writing"},
-        { "answer": "Math" }
+        { "answer": "English"},
+        { "answer": "Spanish"},
+        { "answer": "Chinese"},
+        { "answer": "French"},
+        { "answer": "Italian"}
       ]
     },
     {
-      "question": "What's your proficiency level with computers?",
+      "question": "What skills do you want to learn?",
       "answerOptions": [
-        { "answer": "Beginner: Only used a computer a handful of time" },
-        { "answer": "Intermediate: Regularly use computer for basic things like email" },
-        { "answer": "Advanced: Use tools like excel, social media, etc."}
+        { "answer": "Using your computer to check emails"},
+        { "answer": "Using an online search engine to find the answer to a question"},
+        { "answer": "Using online search to complete a research project"},
+        { "answer": "Creating an online profile on a social media platform"},
+        { "answer": "Creating an online website"}
       ]
     },
     {
