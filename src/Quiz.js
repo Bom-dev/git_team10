@@ -65,7 +65,7 @@ export default function Quiz() {
                                 className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer border-black/10 rounded-xl bg-black/5"
                                 onClick={(e) => handleAnswerOption(answer.answer)}
                             >
-                                {currentQuestion === 2 || currentQuestion === 3 ? <input
+                                {currentQuestion === 3 ? <input
                                     type="checkbox"
                                     name={answer.answer}
                                     value={answer.answer}
