@@ -1,5 +1,5 @@
 import Quiz from './Quiz';
-import Randing from './Randing';
+import Randing from './Landing';
 import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
